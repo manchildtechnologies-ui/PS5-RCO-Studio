@@ -1,0 +1,3 @@
+Project source is licensed under the MIT License.
+Copyright (c) 2026 manchildtechnologies-ui. See LICENSE.
+Third-party notices retain their own terms. See THIRD-PARTY-AUDIT.md.

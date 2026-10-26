@@ -1,0 +1,18 @@
+{
+  "OpenSSL-3.0.16-LICENSE.txt": {
+    "source_url": "https://raw.githubusercontent.com/openssl/openssl/openssl-3.0.16/LICENSE.txt",
+    "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+  },
+  "Expat-2.7.1-COPYING.txt": {
+    "source_url": "https://raw.githubusercontent.com/libexpat/libexpat/R_2_7_1/expat/COPYING",
+    "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+  },
+  "zlib-1.3.1-LICENSE.txt": {
+    "source_url": "https://raw.githubusercontent.com/madler/zlib/v1.3.1/LICENSE",
+    "sha256": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243"
+  },
+  "XZ-5.2.5-COPYING.txt": {
+    "source_url": "https://raw.githubusercontent.com/tukaani-project/xz/v5.2.5/COPYING",
+    "sha256": "bcb02973ef6e87ea73d331b3a80df7748407f17efdb784b61b47e0e610d3bb5c"
+  }
+}

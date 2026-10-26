@@ -1,0 +1,134 @@
+{
+  "version": "0.4.0",
+  "date": "2026-10-26",
+  "status": "PASS",
+  "scope": "PC-side local validation only",
+  "console_contacted": false,
+  "console_acceptance": "UNTESTED",
+  "automated_tests": {
+    "count": 182,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "command": "python -m unittest discover -s tests -v"
+  },
+  "python_sources_unchanged": true,
+  "original_and_candidate_frozen_checks": "PASS",
+  "normal_launch": {
+    "status": "PASS",
+    "visible_main_window": true,
+    "title": "PS5 RCO Studio 0.4.0",
+    "exit_code": 0,
+    "python_on_path": false,
+    "visual_layout_reviewed": false
+  },
+  "samples": [
+    {
+      "sample": "initial",
+      "resources_enumerated": 8164,
+      "resources_extracted": 8164,
+      "original_sha256": "c0c5a01747c2b671574c604915e4dbd5f9d7cd7d2cba2677f739f3907f773e17",
+      "no_change_sha256": "c0c5a01747c2b671574c604915e4dbd5f9d7cd7d2cba2677f739f3907f773e17",
+      "no_change_byte_identical": true,
+      "checks": [
+        "all resource rows populated",
+        "preview r00000 png",
+        "preview r00064 dds",
+        "preview r00195 dds",
+        "unsupported replacement disabled",
+        "individual export",
+        "all resources exported",
+        "byte-identical rebuild and validation tab",
+        "staged DDS r00064",
+        "staged DDS r00195",
+        "staged PNG/DDS rebuild",
+        "larger PNG relocation, preview, reopen and all-resource content verification",
+        "smaller PNG relocation, preview, reopen and all-resource content verification",
+        "relocated PNG export",
+        "byte-identical no-change extracted-folder round trip",
+        "complete extracted-folder edit, reimport, repack, GUI reopen, every-payload verification and re-extraction",
+        "reset and source identity"
+      ],
+      "replacement": {
+        "status": "PASS",
+        "resource_count": 8164,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      },
+      "larger_png": {
+        "status": "PASS",
+        "resource_count": 8164,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      },
+      "smaller_png": {
+        "status": "PASS",
+        "resource_count": 8164,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      },
+      "workflow_rebuild": {
+        "status": "PASS",
+        "resource_count": 8164,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      }
+    },
+    {
+      "sample": "UI3",
+      "resources_enumerated": 1715,
+      "resources_extracted": 1715,
+      "original_sha256": "ed0e9ef531a816b0b5e01a9fee23022a82b406d878b19205ed95515546354f24",
+      "no_change_sha256": "ed0e9ef531a816b0b5e01a9fee23022a82b406d878b19205ed95515546354f24",
+      "no_change_byte_identical": true,
+      "checks": [
+        "Extract all real shared resources",
+        "Reconstruct extracted shared resources without changes",
+        "Byte-identical GUI rebuild preserving every shared pointer",
+        "Edit a real PNG without disturbing shared SVG/compressed resources",
+        "Reopen and validate all real resources after edit",
+        "Synthetic shared PNG/DXT5/BC7 no-change rebuild",
+        "Stage three independent shared PNG/DDS edits atomically",
+        "Copy-on-write rebuild and every-reference validation",
+        "Read-only raw extraction remains available for unverified overlaps"
+      ],
+      "real_png_edit": {
+        "status": "PASS",
+        "resource_count": 1715,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      },
+      "synthetic_copy_on_write": {
+        "status": "PASS",
+        "resource_count": 6,
+        "replacement_contents_verified": true,
+        "untouched_contents_verified": true,
+        "reference_updates_verified": true,
+        "shared_references_preserved": true
+      },
+      "shared_groups": 8,
+      "real_shared_formats": [
+        "SVG",
+        "zstd-declared locale"
+      ],
+      "shared_raster_coverage": "Synthetic PNG, DXT5 DDS and BC7 DDS fixtures; no real shared raster sample claim"
+    }
+  ],
+  "limitations": [
+    "Two private sample byte sequences, not universal firmware coverage",
+    "One workstation, no independent clean Windows installation tested",
+    "Hosted CI has not run before publication",
+    "Visual layout not reviewed during normal launch check",
+    "Private sample files, extracted resources and raw reports excluded"
+  ]
+}
